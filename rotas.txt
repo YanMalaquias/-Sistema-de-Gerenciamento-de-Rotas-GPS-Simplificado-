@@ -1,0 +1,21 @@
+C;Acopiara;0.3800;0.5000
+C;Iguatu;0.5800;0.6800
+C;Oros;0.7400;0.5200
+C;Juazeiro do Norte;0.3500;0.9000
+C;Crato;0.1800;0.8800
+C;Quixada;0.4200;0.2600
+C;Fortaleza;0.8400;0.1000
+E;Acopiara;Iguatu;67.000
+E;Iguatu;Acopiara;67.000
+E;Iguatu;Oros;54.000
+E;Oros;Iguatu;54.000
+E;Iguatu;Juazeiro do Norte;150.000
+E;Juazeiro do Norte;Iguatu;150.000
+E;Juazeiro do Norte;Crato;12.000
+E;Crato;Juazeiro do Norte;12.000
+E;Acopiara;Quixada;160.000
+E;Quixada;Acopiara;160.000
+E;Quixada;Fortaleza;165.000
+E;Fortaleza;Quixada;165.000
+E;Oros;Fortaleza;330.000
+E;Fortaleza;Oros;330.000

@@ -102,6 +102,18 @@ E;Fortaleza;Maracanaú;25
 
 As duas linhas entre Fortaleza e Caucaia representam uma estrada de mão dupla. Já a linha de Fortaleza para Maracanaú representa apenas o sentido indicado.
 
+### Utilizar o `rotas.txt` deste repositório
+
+O arquivo `rotas.txt` incluído no projeto já contém cidades e estradas de exemplo. Para usá-lo:
+
+1. Deixe `rotas.txt` na pasta de onde o programa será executado. Ao iniciar, o programa carrega esse arquivo automaticamente se encontrá-lo.
+2. Para carregar outro arquivo durante a execução, escolha a opção `6` e informe o nome ou caminho do arquivo. Pressione Enter para carregar `rotas.txt` da pasta atual. Essa operação substitui a rede que está na memória.
+3. Para guardar alterações, escolha a opção `5` e pressione Enter para salvar em `rotas.txt`, ou informe outro nome para salvar em um arquivo separado.
+
+Também é possível editar `rotas.txt` em um editor de texto simples. Mantenha as linhas `C` antes das linhas `E`, pois as estradas referenciam cidades já cadastradas. Separe os campos por ponto e vírgula e use ponto como separador decimal nas distâncias. Cada linha `E` representa um sentido; para uma estrada de mão dupla, inclua uma linha para cada direção.
+
+No arquivo de exemplo, as linhas de cidade têm campos extras de coordenadas, por exemplo `C;Acopiara;0.3800;0.5000`. A versão atual do programa usa somente o nome da cidade (o segundo campo); não usa as coordenadas no cálculo de rotas. Ao salvar a rede pela opção `5`, o programa reescreve o arquivo no formato simples `C;NomeDaCidade`, removendo esses campos extras. Faça uma cópia antes de salvar caso queira preservar as coordenadas originais.
+
 Ao salvar, o programa grava primeiro as cidades e depois cada estrada direcionada. O carregador ignora linhas vazias e informa quantas linhas inválidas foram ignoradas. Carregar um arquivo limpa a rede atual antes de preenchê-la.
 
 ## Arquivos do repositório

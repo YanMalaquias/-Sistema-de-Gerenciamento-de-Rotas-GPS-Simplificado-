@@ -1,21 +1,58 @@
-C;Acopiara;0.3800;0.5000
-C;Iguatu;0.5800;0.6800
-C;Oros;0.7400;0.5200
-C;Juazeiro do Norte;0.3500;0.9000
-C;Crato;0.1800;0.8800
-C;Quixada;0.4200;0.2600
-C;Fortaleza;0.8400;0.1000
+C;Fortaleza;0.6300;0.1200
+C;Pacajus;0.6800;0.2400
+C;Itapipoca;0.3600;0.0500
+C;Sobral;0.1400;0.2400
+C;Canindé;0.4000;0.2700
+C;Aracati;0.8800;0.3000
+C;Russas;0.8000;0.4000
+C;Limoeiro do Norte;0.8600;0.5000
+C;Quixadá;0.5400;0.4000
+C;Quixeramobim;0.3800;0.4800
+C;Acopiara;0.2600;0.6400
+C;Iguatu;0.4400;0.7400
+C;Orós;0.6400;0.6600
+C;Juazeiro do Norte;0.5000;0.8800
+C;Crato;0.3000;0.9400
+C;Barbalha;0.7000;0.9400
+E;Fortaleza;Pacajus;52.000
+E;Pacajus;Fortaleza;52.000
+E;Pacajus;Quixadá;115.000
+E;Quixadá;Pacajus;115.000
+E;Fortaleza;Quixadá;167.000
+E;Quixadá;Fortaleza;167.000
+E;Quixadá;Quixeramobim;46.000
+E;Quixeramobim;Quixadá;46.000
+E;Quixadá;Acopiara;185.000
+E;Acopiara;Quixadá;185.000
+E;Quixadá;Orós;186.000
+E;Orós;Quixadá;186.000
+E;Quixeramobim;Iguatu;170.000
+E;Iguatu;Quixeramobim;170.000
+E;Fortaleza;Aracati;147.000
+E;Aracati;Fortaleza;147.000
+E;Aracati;Russas;63.000
+E;Russas;Aracati;63.000
+E;Fortaleza;Russas;160.000
+E;Russas;Fortaleza;160.000
+E;Russas;Limoeiro do Norte;47.000
+E;Limoeiro do Norte;Russas;47.000
+E;Fortaleza;Canindé;118.000
+E;Canindé;Fortaleza;118.000
+E;Fortaleza;Itapipoca;130.000
+E;Itapipoca;Fortaleza;130.000
+E;Fortaleza;Sobral;233.000
+E;Sobral;Fortaleza;233.000
 E;Acopiara;Iguatu;67.000
 E;Iguatu;Acopiara;67.000
-E;Iguatu;Oros;54.000
-E;Oros;Iguatu;54.000
+E;Iguatu;Orós;45.000
+E;Orós;Iguatu;45.000
+E;Orós;Juazeiro do Norte;155.000
+E;Juazeiro do Norte;Orós;155.000
 E;Iguatu;Juazeiro do Norte;150.000
 E;Juazeiro do Norte;Iguatu;150.000
 E;Juazeiro do Norte;Crato;12.000
 E;Crato;Juazeiro do Norte;12.000
-E;Acopiara;Quixada;160.000
-E;Quixada;Acopiara;160.000
-E;Quixada;Fortaleza;165.000
-E;Fortaleza;Quixada;165.000
-E;Oros;Fortaleza;330.000
-E;Fortaleza;Oros;330.000
+E;Juazeiro do Norte;Barbalha;14.000
+E;Barbalha;Juazeiro do Norte;14.000
+E;Crato;Barbalha;11.000
+E;Barbalha;Crato;11.000

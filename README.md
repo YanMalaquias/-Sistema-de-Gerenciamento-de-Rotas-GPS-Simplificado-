@@ -4,39 +4,79 @@ Aplicativo de terminal escrito em C para cadastrar cidades e estradas, consultar
 
 ## Requisitos
 
-- Compilador C com suporte ao padrão usado pelo GCC, como GCC ou MinGW-w64.
-- Terminal (PowerShell, Git Bash, Linux ou macOS).
+- Um compilador C: GCC no Windows/Linux ou Clang (instalado pelas ferramentas de linha de comando do Xcode) no macOS.
+- Um terminal.
+- Para clonar o repositório pelo terminal, Git. Também é possível baixar o projeto como ZIP pelo GitHub.
 
-## Compilar e executar
+## Preparar o compilador
 
-O arquivo-fonte deste repositório se chama `.c`. Abra o terminal na pasta do repositório e compile:
+### Windows
 
-### Windows (PowerShell ou Git Bash)
+1. Instale o [MSYS2](https://www.msys2.org/).
+2. No menu Iniciar, abra **MSYS2 UCRT64** (não o terminal **MSYS2 MSYS**).
+3. Instale o GCC nesse terminal:
+
+   ```bash
+   pacman -S --needed mingw-w64-ucrt-x86_64-gcc
+   ```
+
+4. Confirme a instalação:
+
+   ```bash
+   gcc --version
+   ```
+
+Use o terminal **MSYS2 UCRT64** para compilar. O GCC instalado pelo MSYS2 pode não ser reconhecido no PowerShell ou no Prompt de Comando sem configuração adicional do `PATH`.
+
+### Ubuntu ou Debian
+
+```bash
+sudo apt update
+sudo apt install build-essential
+```
+
+### macOS
+
+Instale as ferramentas de linha de comando do Xcode:
+
+```bash
+xcode-select --install
+```
+
+## Baixar, compilar e executar
+
+Baixe o ZIP pelo GitHub e extraia-o, ou clone o repositório:
+
+```bash
+git clone https://github.com/YanMalaquias/-Sistema-de-Gerenciamento-de-Rotas-GPS-Simplificado-.git
+```
+
+Abra um terminal **na pasta do projeto**, onde estão o arquivo `.c` e `rotas.txt`. No VS Code, por exemplo, abra essa pasta e escolha **Terminal > Novo Terminal**.
+
+### Windows (MSYS2 UCRT64)
 
 ```bash
 gcc .c -o gps_terminal.exe -Wall -Wextra
-```
-
-No PowerShell, execute:
-
-```powershell
-.\gps_terminal.exe
-```
-
-No Git Bash, execute:
-
-```bash
 ./gps_terminal.exe
 ```
 
-### Linux ou macOS
+### Linux
 
 ```bash
 gcc .c -o gps_terminal -Wall -Wextra
 ./gps_terminal
 ```
 
-No Windows, também é possível abrir `gps_terminal.exe` pelo Explorador de Arquivos. Executá-lo pelo terminal permite interagir com o menu.
+### macOS
+
+O comando `gcc` usa o Clang instalado pelas ferramentas de linha de comando do Xcode:
+
+```bash
+gcc .c -o gps_terminal -Wall -Wextra
+./gps_terminal
+```
+
+Execute o programa a partir da pasta do projeto para que ele encontre automaticamente o arquivo `rotas.txt`. O terminal também permite interagir com o menu e ver mensagens de erro.
 
 ## Como usar
 

@@ -51,19 +51,19 @@ Baixe o ZIP pelo GitHub e extraia-o, ou clone o repositório:
 git clone https://github.com/YanMalaquias/-Sistema-de-Gerenciamento-de-Rotas-GPS-Simplificado-.git
 ```
 
-Abra um terminal **na pasta do projeto**, onde estão o arquivo `.c` e `rotas.txt`. No VS Code, por exemplo, abra essa pasta e escolha **Terminal > Novo Terminal**.
+Abra um terminal **na pasta do projeto**, onde estão o arquivo `.c` e `rotas.txt`. No VS Code, por exemplo, abra essa pasta e escolha **Terminal > Novo Terminal**. Como o arquivo-fonte se chama somente `.c` (sem nome antes da extensão), use `-x c` para informar explicitamente ao GCC que ele contém código C.
 
 ### Windows (MSYS2 UCRT64)
 
 ```bash
-gcc .c -o gps_terminal.exe -Wall -Wextra
+gcc -x c .c -o gps_terminal.exe -Wall -Wextra
 ./gps_terminal.exe
 ```
 
 ### Linux
 
 ```bash
-gcc .c -o gps_terminal -Wall -Wextra
+gcc -x c .c -o gps_terminal -Wall -Wextra
 ./gps_terminal
 ```
 
@@ -72,7 +72,7 @@ gcc .c -o gps_terminal -Wall -Wextra
 O comando `gcc` usa o Clang instalado pelas ferramentas de linha de comando do Xcode:
 
 ```bash
-gcc .c -o gps_terminal -Wall -Wextra
+gcc -x c .c -o gps_terminal -Wall -Wextra
 ./gps_terminal
 ```
 
